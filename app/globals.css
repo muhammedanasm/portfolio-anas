@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  cursor: default;
+  selection-background-color: #ffffff;
+  selection-color: #000000;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ആനിമേഷൻ തുടങ്ങുന്നതിന് മുൻപ് ടെക്സ്റ്റ് ഒളിച്ചു വെക്കാൻ */
+.reveal-text {
+  will-change: transform;
+}
+
+/* Smooth Scrolling Customization */
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
