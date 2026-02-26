@@ -15,7 +15,7 @@ const projects = [
     title: "Calinova | Innovation's Next Chapter",
     category: "Next.js • GSAP • Tailwind",
     url: "https://calinova.vercel.app",
-    videoUrl: "/videos/project1.mp4",
+    videoUrl: "/videos/project1.MP4",
     gridClass: "md:col-span-6",
   },
   {
@@ -36,7 +36,7 @@ const projects = [
     title: "IESI Project",
     category: "NEXT.JS • GSAP • SEO",
     url: "https://iesi-project.vercel.app/",
-    videoUrl: "/videos/project2.mp4",
+    videoUrl: "/videos/project2.MP4",
     gridClass: "md:col-span-6 md:-mt-32",
   },
 ];
