@@ -14,11 +14,12 @@ const projects = [
   {
     id: "01",
     title: "Swa Diamonds",
-    category: "Next.js • Tailwind • Ecommerce • Firebase",
-    image: "/images/01.png",
-    url: "https://swadiamonds.com/",
+    category: "React • Tailwind • Ecommerce • Firebase",
+    image: "/images/swa.jpg",
+    url: "https://b2b.swadiamonds.com/",
     layoutClass: "md:w-9/12 self-start", // ഇടത് വശത്ത് വലിയ വലിപ്പത്തിൽ
   },
+
   {
     id: "02",
     title: "Core Vista ",
@@ -42,6 +43,23 @@ const projects = [
     image: "/images/trucks.webp",
     url: "https://www.trucksdata.com/",
     layoutClass: "md:w-10/12 self-start md:-mt-20", // വലിയ വലിപ്പത്തിൽ
+  },
+  {
+    id: "05",
+    title: "TechBank",
+    category: "Vue.js • Tailwind • Performance",
+    image: "/images/tech.jpg",
+    url: "https://techbank-project.vercel.app/",
+    layoutClass: "md:w-8/12 self-end md:mr-10",
+  },
+  {
+    id: "06",
+    title: "Swa Diamonds",
+    category: "Next.js • Tailwind • Ecommerce • Firebase",
+    image: "/images/01.png",
+    url: "https://swadiamonds.com/",
+    // layoutClass: "md:w-9/12 self-start", // ഇടത് വശത്ത് വലിയ വലിപ്പത്തിൽ
+    layoutClass: "md:w-7/12 self-start md:ml-20 md:-mt-32",
   },
 ];
 
