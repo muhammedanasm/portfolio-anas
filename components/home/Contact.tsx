@@ -240,10 +240,11 @@ const countries = [
 ];
 
 const services = [
-  "Bespoke Web Design",
-  "Next.js Development",
-  "UI/UX Design",
-  "Motion Engineering (GSAP)",
+  "Bespoke Web Development",
+  "High-End E-commerce Stores",
+  "UI/UX & Interaction Design",
+  "Brand Identity & Strategy",
+  "Performance Optimization",
   "Full Digital Solution",
 ];
 
