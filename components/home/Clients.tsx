@@ -16,31 +16,31 @@ if (typeof window !== "undefined") {
 const testimonials = [
   {
     quote:
-      "Working with him was a game-changer for our brand. The attention to detail in motion and performance is unmatched.",
-    name: "Alex Thompson",
-    role: "CEO, FinTech Global",
-    location: "London, UK",
+      "Anas understood exactly what we needed for HashTech. He’s quick, reliable, and actually thinks about the business side of things. Our new site has definitely helped us look more professional to our global clients.",
+    name: "Rishan",
+    role: "CEO, HashTech Global",
+    location: "Calicut",
   },
   {
     quote:
-      "The Next.js implementation was flawless. Our site speed improved by 60%, and the minimal design perfectly fits our luxury aesthetic.",
-    name: "Sarah Jenkins",
-    role: "Founder, Muse Studio",
-    location: "New York, USA",
+      "It's hard to find someone who handles GSAP and complex animations so smoothly. Anas's logic is clean and he really knows his way around Next.js. Even working remotely from Dubai, communication was spot on.",
+    name: "Hakeem",
+    role: "Developer",
+    location: "Dubai",
   },
   {
     quote:
-      "A rare talent who understands both design and high-end engineering. The GSAP animations brought our vision to life.",
-    name: "Marco Rossi",
-    role: "Creative Director, Velo Digital",
-    location: "Milan, Italy",
+      "As a designer, I'm very picky about spacing and pixel-perfect layouts. Anas is one of the few developers who truly respects the design files and brings them to life with perfect micro-interactions. Solid work.",
+    name: "Joyal",
+    role: "Designer",
+    location: "Kannur",
   },
   {
     quote:
-      "Fast, professional, and strategic. He didn't just build a website; he built a high-converting digital experience.",
-    name: "David Chen",
-    role: "Marketing Head, TechFlow",
-    location: "Singapore",
+      "Anas doesn't just code what's on the paper; he suggests better ways to handle UX. The final output feels very high-end and premium. Definitely my go-to guy for any serious web project.",
+    name: "Rafeeq",
+    role: "Product Designer",
+    location: "Bengaluru",
   },
 ];
 
@@ -116,7 +116,7 @@ const Clients = () => {
           spaceBetween={40}
           slidesPerView={1}
           loop={true}
-          autoplay={{ delay: 6000, disableOnInteraction: false }}
+          autoplay={{ delay: 8000, disableOnInteraction: false }}
           navigation={{
             nextEl: ".swiper-next",
             prevEl: ".swiper-prev",
