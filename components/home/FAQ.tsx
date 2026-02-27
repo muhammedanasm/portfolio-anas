@@ -62,6 +62,7 @@ const FAQ = () => {
   return (
     <section
       ref={sectionRef}
+      id="faq"
       className="py-32 bg-[#050505] border-t border-zinc-900"
     >
       <div className="max-w-6xl mx-auto px-6">

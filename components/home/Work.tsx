@@ -260,7 +260,7 @@ const Work = () => {
             className="group relative overflow-hidden px-12 py-5 border border-zinc-800 rounded-full transition-all duration-500 hover:border-white"
           >
             <span className="relative z-10 text-[10px] font-bold uppercase tracking-[0.4em] text-zinc-400 group-hover:text-black transition-colors duration-500">
-              Explore Full Portfolio
+              EXPLORE ALL WORKS
             </span>
             <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
           </Link>

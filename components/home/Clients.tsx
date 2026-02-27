@@ -66,6 +66,7 @@ const Clients = () => {
   return (
     <section
       ref={sectionRef}
+      id="reviews"
       className="py-32 bg-[#050505] overflow-hidden border-t border-zinc-900"
     >
       <div className="max-w-6xl mx-auto px-6">

@@ -12,9 +12,29 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name | Best Freelance Developer in Calicut & Malappuram",
+  title: "Anas | Best Freelance Web Developer in Calicut, Manjeri & Malappuram",
   description:
-    "High-performance, minimal websites built with React and Next.js.",
+    "Premium Web Design & Development services in Kerala. Specialized in Next.js, React, and GSAP for high-performance minimalist websites. Hire the best freelance developer in Calicut.",
+  keywords: [
+    "Best web developer in Calicut",
+    "Freelance developer Manjeri",
+    "Web Designer Malappuram",
+    "Next.js developer Kerala",
+    "Freelance React developer Calicut",
+    "Anas developer",
+    "Premium website maker Kerala",
+  ],
+  alternates: {
+    canonical: "https://muhammed-anas.vercel.app", // നിന്റെ വെബ്സൈറ്റ് ലിങ്ക് ഇവിടെ നൽകുക
+  },
+  openGraph: {
+    title: "Anas | Premium Web Developer in Kerala",
+    description: "Building high-end digital experiences with Next.js and GSAP.",
+    url: "https://muhammed-anas.vercel.app",
+    siteName: "Anas Portfolio",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

@@ -13,34 +13,34 @@ if (typeof window !== "undefined") {
 const projects = [
   {
     id: "01",
-    title: "The Visionary Agency",
-    category: "Development • UI/UX",
-    image: "/images/project3.png",
-    url: "https://visionary-agency.com",
+    title: "Swa Diamonds",
+    category: "Next.js • Tailwind • Ecommerce • Firebase",
+    image: "/images/01.png",
+    url: "https://swadiamonds.com/",
     layoutClass: "md:w-9/12 self-start", // ഇടത് വശത്ത് വലിയ വലിപ്പത്തിൽ
   },
   {
     id: "02",
-    title: "Luxury Commerce",
-    category: "E-Commerce • Next.js",
+    title: "Core Vista ",
+    category: "Html • CSS • Performance",
+    url: "https://www.core-vista.com/",
     image: "/images/corevista.jpg",
-    url: "https://luxury-shop.com",
     layoutClass: "md:w-7/12 self-end md:-mt-32", // വലത് വശത്ത് അല്പം മുകളിലേക്ക് കയറി
   },
   {
     id: "03",
-    title: "Minimal Interior",
-    category: "Architecture • Branding",
+    title: "Welota",
+    category: "React • UI/UX • Branding",
+    url: "https://www.welota.com/",
     image: "/images/welota.JPG",
-    url: "https://minimal-interior.com",
     layoutClass: "md:w-8/12 self-center", // നടുവിൽ
   },
   {
     id: "04",
-    title: "Aura Creative",
-    category: "Motion • Engineering",
-    image: "/images/b2nes.jpg",
-    url: "https://aura-creative.com",
+    title: "Trucks Data",
+    category: "React • Data Visualization • Performance",
+    image: "/images/trucks.webp",
+    url: "https://www.trucksdata.com/",
     layoutClass: "md:w-10/12 self-start md:-mt-20", // വലിയ വലിപ്പത്തിൽ
   },
 ];
@@ -75,7 +75,7 @@ export default function WorkPage() {
             <span className="text-[10px] uppercase tracking-[0.6em] text-zinc-600 block mb-6">
               Selected Works
             </span>
-            <h1 className="text-6xl md:text-5xl font-bold tracking-tighter uppercase leading-[0.8]">
+            <h1 className="text-6xl md:text-5xl font-bold tracking-tighter uppercase leading-[1.2]">
               Archive <br />{" "}
               <span className="text-zinc-800 font-light">Bespoke</span>
             </h1>
@@ -121,7 +121,7 @@ export default function WorkPage() {
               {/* Project Info - Museum Label Style */}
               <div className="mt-12 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-l border-zinc-900 pl-8">
                 <div className="space-y-4">
-                  <h3 className="text-4xl md:text-5xl font-bold tracking-tighter uppercase leading-none group-hover:text-zinc-400 transition-colors duration-500">
+                  <h3 className="text-4xl md:text-4xl font-bold tracking-tighter uppercase leading-none group-hover:text-zinc-400 transition-colors duration-500">
                     {project.title}
                   </h3>
                   <p className="text-[10px] text-zinc-500 uppercase tracking-[0.4em] font-medium ">

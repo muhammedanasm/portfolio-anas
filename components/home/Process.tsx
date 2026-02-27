@@ -66,6 +66,7 @@ const Process = () => {
   return (
     <section
       ref={containerRef}
+      id="process"
       className="relative py-32 md:py-28 bg-[#050505] overflow-hidden"
     >
       {/* CREATIVE BACKGROUND ILLUSTRATION (Minimalist SVG) */}
