@@ -50,7 +50,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://wa.me/919645016304"
+              href="https://wa.me/+919645016304"
               target="_blank"
               className="group flex items-center gap-2 text-zinc-500 hover:text-white transition-all duration-300"
             >

@@ -344,7 +344,7 @@ const Contact = () => {
               href="tel:+919645016304"
               className="text-sm text-zinc-400 font-mono block hover:text-white transition-colors duration-300"
             >
-              +91 9645 016 304
+              +91 96450 16304
             </a>
           </div>
         </div>

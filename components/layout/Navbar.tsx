@@ -60,7 +60,7 @@ const Navbar = () => {
 
       {/* BUTTON */}
       <a
-        href="tel:9645016304"
+        href="tel:+919645016304"
         className="relative group overflow-hidden px-8 py-3 rounded-full border border-white/20 text-[12px] font-bold uppercase tracking-tight text-white transition-all duration-500 cursor-pointer"
       >
         {/* 1. Shine Sweep Effect */}
