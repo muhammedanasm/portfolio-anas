@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { gsap } from "gsap";
@@ -10,6 +10,32 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
+// 1. SKELETON COMPONENT WITH SHIMMER ANIMATION
+const SkeletonImage = ({ src, alt }: { src: string; alt: string }) => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  return (
+    <div className="relative w-full h-full overflow-hidden bg-zinc-900">
+      {/* The Shimmering Overlay */}
+      {isLoading && (
+        <div className="absolute inset-0 z-10">
+          <div className="absolute inset-0 -translate-x-full animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-white/5 to-transparent" />
+        </div>
+      )}
+
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className={`object-cover transition-all duration-1000 group-hover:scale-[1.03] ${
+          isLoading ? "opacity-0" : "opacity-100"
+        }`}
+        onLoad={() => setIsLoading(false)}
+      />
+    </div>
+  );
+};
+
 const projects = [
   {
     id: "01",
@@ -19,15 +45,15 @@ const projects = [
     url: "https://b2b.swadiamonds.com/",
     layoutClass: "md:w-9/12 self-start", // ഇടത് വശത്ത് വലിയ വലിപ്പത്തിൽ
   },
-
   {
     id: "02",
-    title: "Core Vista ",
-    category: "Html • CSS • Performance",
-    url: "https://www.core-vista.com/",
-    image: "/images/corevista.jpg",
+    title: "IESI Project",
+    category: "NEXT.JS • GSAP • SEO",
+    url: "https://iesi-project.vercel.app/",
+    image: "/images/ies.webp",
     layoutClass: "md:w-7/12 self-end md:-mt-32", // വലത് വശത്ത് അല്പം മുകളിലേക്ക് കയറി
   },
+
   {
     id: "03",
     title: "Welota",
@@ -60,6 +86,14 @@ const projects = [
     url: "https://swadiamonds.com/",
     // layoutClass: "md:w-9/12 self-start", // ഇടത് വശത്ത് വലിയ വലിപ്പത്തിൽ
     layoutClass: "md:w-7/12 self-start md:ml-20 md:-mt-32",
+  },
+  {
+    id: "07",
+    title: "Core Vista ",
+    category: "Html • CSS • Performance",
+    url: "https://www.core-vista.com/",
+    image: "/images/corevista.jpg",
+    layoutClass: "md:w-7/12 self-end md:-mt-32", // വലത് വശത്ത് അല്പം മുകളിലേക്ക് കയറി
   },
 ];
 
@@ -123,12 +157,13 @@ export default function WorkPage() {
                 rel="noopener noreferrer"
                 className="relative z-10 overflow-hidden aspect-video bg-zinc-900 rounded-sm shadow-2xl cursor-pointer block"
               >
-                <Image
+                {/* <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover transition-all duration-1000 group-hover:scale-[1.03]"
-                />
+                /> */}
+                <SkeletonImage src={project.image} alt={project.title} />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                   <span className="text-[10px] tracking-[0.4em] uppercase text-white border border-white/20 px-6 py-2 rounded-full backdrop-blur-md">
                     Live Experience

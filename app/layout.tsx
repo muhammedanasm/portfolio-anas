@@ -12,28 +12,46 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Anas | Best Freelance Web Developer in Calicut, Manjeri & Malappuram",
+  title: "Muhammed Anas | Best Freelance Web Developer in Kerala & Dubai",
+
   description:
-    "Premium Web Design & Development services in Kerala. Specialized in Next.js, React, and GSAP for high-performance minimalist websites. Hire the best freelance developer in Calicut.",
+    "Premium Next.js & GSAP Developer in Kerala. Specializing in high-performance minimalist websites for brands in India and Dubai. Hire Anas for bespoke digital solutions.",
+
   keywords: [
     "Best web developer in Calicut",
+    "Top freelance developer Dubai",
     "Freelance developer Manjeri",
-    "Web Designer Malappuram",
-    "Next.js developer Kerala",
-    "Freelance React developer Calicut",
-    "Anas developer",
-    "Premium website maker Kerala",
+    "Next.js developer Malappuram",
+    "React developer Calicut",
+    "Premium web design Dubai",
+    "Frontend engineer Kerala",
+    "Bespoke website developer India",
+    "GSAP animation expert Kerala",
   ],
   alternates: {
     canonical: "https://muhammed-anas.vercel.app", // നിന്റെ വെബ്സൈറ്റ് ലിങ്ക് ഇവിടെ നൽകുക
   },
   openGraph: {
-    title: "Anas | Premium Web Developer in Kerala",
+    title: "Muhammed Anas | Premium Web Developer",
     description: "Building high-end digital experiences with Next.js and GSAP.",
     url: "https://muhammed-anas.vercel.app",
     siteName: "Anas Portfolio",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
     locale: "en_US",
     type: "website",
+  },
+  // Twitter/X കാർഡുകൾ കൂടി ആഡ് ചെയ്യുന്നത് വിദേശ ക്ലയന്റ്സിന് ഗുണകരമാകും
+  twitter: {
+    card: "summary_large_image",
+    title: "Muhammed Anas | Web Developer",
+    description: "High-performance minimalist websites built with Next.js.",
+    images: ["/images/og-image.png"],
   },
 };
 
