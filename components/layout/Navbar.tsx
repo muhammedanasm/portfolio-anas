@@ -9,7 +9,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // 50px-ൽ കൂടുതൽ സ്ക്രോൾ ചെയ്താൽ ബാക്ക്ഗ്രൗണ്ട് മാറ്റും
       if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {

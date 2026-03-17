@@ -15,11 +15,8 @@ export default function SmoothScrolling({
 
   useEffect(() => {
     if (lenis) {
-      // 1. പേജ് മാറുമ്പോൾ ഉടൻ ടോപ്പിലേക്ക് മാറ്റുന്നു
       lenis.scrollTo(0, { immediate: true });
 
-      // 2. പുതിയ പേജിലെ GSAP ആനിമേഷനുകൾ കൃത്യമായി കണക്കാക്കാൻ (Sinan Studio Style)
-      // ചെറിയൊരു ഡിലേ നൽകുന്നത് പേജ് ലോഡ് ആകാൻ സമയം നൽകാനാണ്.
       setTimeout(() => {
         ScrollTrigger.refresh();
       }, 100);

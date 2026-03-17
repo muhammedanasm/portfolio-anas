@@ -53,47 +53,55 @@ const projects = [
     image: "/images/ies.webp",
     layoutClass: "md:w-7/12 self-end md:-mt-32", // വലത് വശത്ത് അല്പം മുകളിലേക്ക് കയറി
   },
-
   {
     id: "03",
+    title: "Abate Project",
+    category: "React • tailwind • SEO",
+    url: "https://abatemr.com/",
+    image: "/images/abate.jpg",
+    layoutClass: "md:w-8/12 self-center", // നടുവിൽ
+  },
+
+  {
+    id: "04",
     title: "Welota",
     category: "React • UI/UX • Branding",
     url: "https://www.welota.com/",
     image: "/images/welota.JPG",
-    layoutClass: "md:w-8/12 self-center", // നടുവിൽ
-  },
-  {
-    id: "04",
-    title: "Trucks Data",
-    category: "React • Data Visualization • Performance",
-    image: "/images/trucks.webp",
-    url: "https://www.trucksdata.com/",
     layoutClass: "md:w-10/12 self-start md:-mt-20", // വലിയ വലിപ്പത്തിൽ
   },
   {
     id: "05",
-    title: "TechBank",
-    category: "Vue.js • Tailwind • Performance",
-    image: "/images/tech.jpg",
-    url: "https://techbank-project.vercel.app/",
+    title: "Trucks Data",
+    category: "React • Data Visualization • Performance",
+    image: "/images/trucks.webp",
+    url: "https://www.trucksdata.com/",
     layoutClass: "md:w-8/12 self-end md:mr-10",
   },
   {
     id: "06",
+    title: "TechBank",
+    category: "Vue.js • Tailwind • Performance",
+    image: "/images/tech.jpg",
+    url: "https://techbank-project.vercel.app/",
+    layoutClass: "md:w-7/12 self-start md:ml-20 md:-mt-32",
+  },
+  {
+    id: "07",
     title: "Swa Diamonds",
     category: "Next.js • Tailwind • Ecommerce • Firebase",
     image: "/images/01.png",
     url: "https://swadiamonds.com/",
     // layoutClass: "md:w-9/12 self-start", // ഇടത് വശത്ത് വലിയ വലിപ്പത്തിൽ
-    layoutClass: "md:w-7/12 self-start md:ml-20 md:-mt-32",
+    layoutClass: "md:w-7/12 self-end md:-mt-32",
   },
   {
-    id: "07",
+    id: "08",
     title: "Core Vista ",
     category: "Html • CSS • Performance",
     url: "https://www.core-vista.com/",
     image: "/images/corevista.jpg",
-    layoutClass: "md:w-7/12 self-end md:-mt-32", // വലത് വശത്ത് അല്പം മുകളിലേക്ക് കയറി
+    layoutClass: "md:w-8/12 self-center", // നടുവിൽ
   },
 ];
 

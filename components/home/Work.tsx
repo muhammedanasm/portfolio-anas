@@ -58,7 +58,7 @@ const ImageItem = ({
   onLoaded: () => void;
 }) => {
   const imgRef = useRef<HTMLImageElement>(null);
-  const loadedRef = useRef(false); // ഡ്യൂപ്ലിക്കേറ്റ് കോളുകൾ ഒഴിവാക്കാൻ
+  const loadedRef = useRef(false);
 
   useEffect(() => {
     const img = imgRef.current;
@@ -86,7 +86,6 @@ const ImageItem = ({
   );
 };
 
-// വീഡിയോയ്ക്ക് വേണ്ടി ഒരു പ്രത്യേക കമ്പോണന്റ് (കൂടുതൽ കൺട്രോളിന്)
 const VideoItem = ({
   url,
   onLoaded,
@@ -100,12 +99,10 @@ const VideoItem = ({
     const video = videoRef.current;
     if (!video) return;
 
-    // വീഡിയോ നേരത്തെ ലോഡ് ആയിട്ടുണ്ടെങ്കിൽ (Cache)
     if (video.readyState >= 3) {
       onLoaded();
     }
 
-    // പ്ലേ ആകുന്നുണ്ടെന്ന് ഉറപ്പുവരുത്താൻ
     video.play().catch((e) => console.error("Autoplay failed:", e));
   }, [onLoaded]);
   return (
@@ -130,7 +127,7 @@ const Work = () => {
 
   const handleMediaLoad = useCallback((index: number) => {
     setLoadedMedia((prev) => {
-      if (prev[index]) return prev; // നേരത്തെ ലോഡ് ആയതാണെങ്കിൽ സ്റ്റേറ്റ് മാറ്റില്ല
+      if (prev[index]) return prev;
       return { ...prev, [index]: true };
     });
   }, []);

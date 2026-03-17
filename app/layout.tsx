@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "GSAP animation expert Kerala",
   ],
   alternates: {
-    canonical: "https://muhammed-anas.vercel.app", // നിന്റെ വെബ്സൈറ്റ് ലിങ്ക് ഇവിടെ നൽകുക
+    canonical: "https://muhammed-anas.vercel.app",
   },
   openGraph: {
     title: "Muhammed Anas | Premium Web Developer",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  // Twitter/X കാർഡുകൾ കൂടി ആഡ് ചെയ്യുന്നത് വിദേശ ക്ലയന്റ്സിന് ഗുണകരമാകും
+  // Twitter/X
   twitter: {
     card: "summary_large_image",
     title: "Muhammed Anas | Web Developer",
