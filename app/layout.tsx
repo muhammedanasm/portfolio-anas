@@ -16,6 +16,10 @@ export const metadata: Metadata = {
 
   description:
     "Premium Next.js & GSAP Developer in Kerala. Specializing in high-performance minimalist websites for brands in India and Dubai. Hire Anas for bespoke digital solutions.",
+  verification: {
+    // HTML ടാഗ് ഒഴിവാക്കി വെറും content മാത്രം നൽകുക
+    google: "4-NQWHXt92g1FybwwJ7VR84BSuFfyHZw7qEQd3Qx0x4",
+  },
 
   keywords: [
     "Best web developer in Calicut",
@@ -29,12 +33,12 @@ export const metadata: Metadata = {
     "GSAP animation expert Kerala",
   ],
   alternates: {
-    canonical: "https://muhammed-anas.vercel.app",
+    canonical: "https://getanas.com/",
   },
   openGraph: {
     title: "Muhammed Anas | Premium Web Developer",
     description: "Building high-end digital experiences with Next.js and GSAP.",
-    url: "https://muhammed-anas.vercel.app",
+    url: "https://getanas.com/",
     siteName: "Anas Portfolio",
     images: [
       {
