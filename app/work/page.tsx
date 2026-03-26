@@ -103,6 +103,14 @@ const projects = [
     image: "/images/corevista.jpg",
     layoutClass: "md:w-8/12 self-center", // നടുവിൽ
   },
+  {
+    id: "09",
+    title: "Chocolate POS",
+    category: "react • django • tailwind",
+    url: "https://fifi-pos.zinfog.in/",
+    image: "/images/chocolate.jpg",
+    layoutClass: "md:w-9/12 self-start",
+  },
 ];
 
 export default function WorkPage() {
