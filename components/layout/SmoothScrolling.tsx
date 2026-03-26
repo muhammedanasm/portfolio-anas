@@ -28,7 +28,7 @@ export default function SmoothScrolling({
       root
       options={{
         lerp: 0.08, // Controls the smoothness (lower is smoother, 0.08-0.1 is premium)
-        duration: 1.5, // How long the scroll animation takes
+        duration: 1.5,
         smoothWheel: true,
       }}
     >
