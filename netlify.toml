@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NETLIFY_USE_NEXTJS_CACHE_HANDLER = "false"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
