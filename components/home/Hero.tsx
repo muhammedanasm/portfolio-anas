@@ -70,7 +70,7 @@ const Hero = () => {
           Premium Web Designer & Developer
         </p>
 
-        <h1 className="text-[12vw] md:text-[5.5vw] font-bold leading-[0.95] tracking-tight text-white mb-8">
+        <h1 className="text-[30px] md:text-[80px] font-bold leading-[0.95] tracking-tight text-white mb-8">
           We Build Websites That <br />
           <span className="text-zinc-500 font-semibold leading-normal">
             Turn Users into Clients
