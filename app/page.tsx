@@ -5,6 +5,7 @@ import Hero from "@/components/home/Hero";
 import Process from "@/components/home/Process";
 import Work from "@/components/home/Work";
 import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
       <Contact />
 
       <Footer />
+
+      <WhatsAppButton />
 
       {/* Future sections will go here 👇 */}
       {/* <Marquee /> */}
