@@ -50,7 +50,7 @@ const projects = [
     title: "IESI Project",
     category: "NEXT.JS • GSAP • SEO",
     url: "https://iesi-project.vercel.app/",
-    image: "/images/ies.webp",
+    image: "/images/ies.jpg",
     layoutClass: "md:w-7/12 self-end md:-mt-32", // വലത് വശത്ത് അല്പം മുകളിലേക്ക് കയറി
   },
   {
