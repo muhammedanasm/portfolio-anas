@@ -5,6 +5,7 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -49,7 +50,7 @@ const projects = [
     id: "02",
     title: "IESI Project",
     category: "NEXT.JS • GSAP • SEO",
-    url: "https://iesi-project.vercel.app/",
+    url: "https://iesi.vercel.app/",
     image: "/images/ies.jpg",
     layoutClass: "md:w-7/12 self-end md:-mt-32", // വലത് വശത്ത് അല്പം മുകളിലേക്ക് കയറി
   },
@@ -238,6 +239,7 @@ export default function WorkPage() {
           </Link>
         </div>
       </div>
+      <WhatsAppButton />
     </section>
   );
 }

@@ -2,9 +2,11 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ChevronDown } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const pathname = usePathname();
   console.log("test");
 
@@ -23,6 +25,15 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Work", href: "/work" },
+    {
+      name: "Services",
+      href: "#",
+      submenu: [
+        { name: "Premium Web Design", href: "/services/premium-web-design" },
+        // { name: "E-commerce Solutions", href: "/services/ecommerce-solutions" },
+        // { name: "SEO Optimization", href: "/services/seo-optimization" },
+      ],
+    },
     { name: "Process", href: "/#process" },
     { name: "Reviews", href: "/#reviews" },
     { name: "FAQ", href: "/#faq" },
@@ -43,7 +54,7 @@ const Navbar = () => {
 
       {/* NAV LINKS */}
       <div className="hidden md:flex items-center gap-10">
-        {navLinks.map((link) => (
+        {/* {navLinks.map((link) => (
           <Link
             key={link.name}
             href={link.href}
@@ -55,6 +66,62 @@ const Navbar = () => {
           >
             {link.name}
           </Link>
+        ))} */}
+        {navLinks.map((link) => (
+          <div
+            key={link.name}
+            className="relative group"
+            onMouseEnter={() => link.submenu && setIsServicesOpen(true)}
+            onMouseLeave={() => link.submenu && setIsServicesOpen(false)}
+          >
+            {link.submenu ? (
+              // സർവീസ് Dropdown ലിങ്ക്
+              <div className="flex items-center gap-1 cursor-default">
+                <span
+                  className={`text-[11px] uppercase tracking-widest transition-colors duration-300 ${
+                    pathname.includes("/services")
+                      ? "text-white font-bold"
+                      : "text-zinc-400 group-hover:text-white"
+                  }`}
+                >
+                  {link.name}
+                </span>
+                <ChevronDown
+                  size={12}
+                  className={`text-zinc-400 transition-transform duration-300 ${isServicesOpen ? "rotate-180" : ""}`}
+                />
+
+                {/* Dropdown Menu */}
+                <div
+                  className={`absolute top-full -left-4 pt-4 transition-all duration-300 ${isServicesOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible translate-y-2"}`}
+                >
+                  <div className="bg-zinc-900/95 backdrop-blur-xl border border-white/10 p-2 rounded-lg w-56 shadow-2xl">
+                    {link.submenu.map((sub) => (
+                      <Link
+                        key={sub.name}
+                        href={sub.href}
+                        className="block px-4 py-3 text-[10px] uppercase tracking-[0.2em] text-zinc-400 hover:text-white hover:bg-white/5 rounded-md transition-all"
+                      >
+                        {sub.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              // സാധാരണ ലിങ്കുകൾ
+              <Link
+                href={link.href}
+                className={`text-[11px] uppercase tracking-widest transition-colors duration-300 ${
+                  pathname === link.href
+                    ? "text-white font-bold"
+                    : "text-zinc-400 hover:text-white"
+                }`}
+              >
+                {link.name}
+              </Link>
+            )}
+          </div>
         ))}
       </div>
 
