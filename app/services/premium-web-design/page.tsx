@@ -53,8 +53,85 @@ const projects = [
 ];
 
 const ServicePage = () => {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Muhammed Anas | Premium Web Design & Development",
+    provider: {
+      "@type": "Person",
+      name: "Muhammed Anas",
+      url: "https://getanas.com",
+      jobTitle: "Freelance Next.js & React Developer",
+      description:
+        "Muhammed Anas is a premium web developer specializing in Next.js, React, and GSAP animations, serving clients in Dubai, Kerala, and Saudi Arabia.",
+    },
+    description:
+      "Professional freelance web design and development. Specialized in high-performance websites for businesses in Calicut, Kochi, Dubai, and beyond. Rank #1 on search engines.",
+    areaServed: [
+      { "@type": "City", name: "Dubai" },
+      { "@type": "City", name: "Calicut" },
+      { "@type": "City", name: "Kozhikode" }, // ആളുകൾ ഇത് സെർച്ച് ചെയ്യാറുണ്ട്
+      { "@type": "City", name: "Manjeri" },
+      { "@type": "City", name: "Malappuram" },
+      { "@type": "City", name: "Kochi" },
+      { "@type": "City", name: "Ernakulam" },
+      { "@type": "City", name: "Kannur" },
+      { "@type": "City", name: "Thrissur" },
+      { "@type": "City", name: "Muscat" },
+      { "@type": "City", name: "Riyadh" },
+      { "@type": "Country", name: "United Arab Emirates" },
+      { "@type": "Country", name: "Saudi Arabia" },
+      { "@type": "Country", name: "Oman" },
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Freelance Web Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Freelance Web Developer in Kerala",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Best Web Designer in Dubai",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Best Web Designer in Calicut",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Next.js & GSAP Animation Expert",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "E-commerce Website Builder",
+          },
+        },
+      ],
+    },
+  };
+
   return (
     <main className="bg-[#050505] text-white selection:bg-white/20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* 1. HERO SECTION */}
       <section className="relative min-h-[90vh] flex flex-col justify-center px-6 md:px-16 pt-32 overflow-hidden">
         {/* Background Aura */}
@@ -69,10 +146,10 @@ const ServicePage = () => {
             <span className="text-zinc-700 font-light">Web Design</span>
           </h1>
           <p className="max-w-2xl text-zinc-400 text-lg md:text-xl font-light leading-relaxed mb-12">
-            I build digital architectures that don&apos;t just look good—they
-            perform. Focused on high-end minimalism, motion engineering, and
-            conversion-ready experiences for brands in Dubai, Kerala, and
-            beyond.
+            Engineering high-end digital experiences for industry leaders across
+            the **GCC and India**. Specializing in minimalist motion design and
+            performance-driven architectures for brands in **Dubai, Muscat,
+            Riyadh, and Kerala**.
           </p>
           <a
             href="https://wa.me/919645016304?text=Hi%20Anas,%20I'm%20interested%20in%20your%20Premium%20Web%20Design%20service."
@@ -237,32 +314,40 @@ const ServicePage = () => {
           Ready to elevate <br /> your{" "}
           <span className="text-zinc-700">Digital Presence?</span>
         </h2>
-        <Link
-          href="/"
-          className="bg-white text-black px-12 py-6 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:scale-105 transition-transform inline-block"
+        <a
+          href="https://wa.me/919645016304?text=Hi%20Anas,%20I%20just%20saw%20your%20Premium%20Web%20Design%20portfolio.%20I'd%20like%20to%20discuss%20a%20project."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white text-black px-12 py-6 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] hover:scale-105 transition-all duration-500 inline-block shadow-[0_0_30px_rgba(255,255,255,0.1)]"
         >
           Get a Custom Quote
-        </Link>
+        </a>
       </section>
       {/* 5. TARGET AUDIENCE & RESULTS */}
       <section className="py-24 px-6 md:px-16 bg-white text-black">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase leading-none mb-8">
-              Built for <br />{" "}
-              <span className="text-zinc-400">High-Stakes</span> Brands.
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter uppercase leading-none mb-8">
+              Global Standards. <br />{" "}
+              <span className="text-zinc-500">Bespoke Execution.</span>
             </h2>
-            <p className="text-lg text-zinc-600 mb-8 font-light">
-              നിങ്ങളുടെ ബിസിനസ്സ് വെബ്സൈറ്റ് വെറുമൊരു ഡിസൈൻ മാത്രമല്ല, അത്
-              നിങ്ങളുടെ 24/7 പ്രവർത്തിക്കുന്ന സെയിൽസ്മാൻ ആണ്. I specialize in
-              working with businesses in **Dubai and Kerala** who want to
-              dominate their industry.
+
+            <p className="text-lg text-zinc-500 mb-8 font-light leading-relaxed">
+              Your website is your most valuable digital asset. I focus on
+              bridging the gap between aesthetic luxury and technical precision.
+              Having worked with clients in{" "}
+              <span className="text-zinc-900 font-medium">
+                Oman, Saudi Arabia, and Dubai
+              </span>
+              , I bring international design standards to every project I
+              undertake in Kerala and beyond.
             </p>
             <ul className="space-y-4">
               {[
-                "Fast Loading (Under 1s)",
-                "SEO Optimized for Local Search",
-                "High Conversion UI Design",
+                "World-class GSAP Animations",
+                "Next.js Speed & Performance (SEO 100)",
+                "GCC & International Design Aesthetics",
+                "Conversion-Optimized User Flows",
               ].map((item, i) => (
                 <li
                   key={i}
@@ -282,13 +367,69 @@ const ServicePage = () => {
               improve your conversion by 2x.
             </p>
             <a
-              href="https://wa.me/919645016304?text=Hi%20Anas,%20I'm%20interested%20in%20your%20Premium%20Web%20Design%20service."
+              href="https://wa.me/919645016304?text=Hi%20Anas,%20I'm%20interested%20in%20building%20a%20Premium%20Website."
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center bg-black text-white py-5 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-zinc-800 transition-all"
             >
               Start a Conversation on WhatsApp
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-32 px-6 md:px-16 border-t border-zinc-900">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div>
+            <span className="text-[10px] uppercase tracking-[0.6em] text-zinc-500 block mb-6 animate-pulse">
+              International Presence
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tighter mb-8 leading-tight">
+              Serving Brands <br />{" "}
+              <span className="text-zinc-700 font-light">Worldwide.</span>
+            </h2>
+            <p className="text-zinc-500 text-sm md:text-base font-light leading-relaxed">
+              My work spans across different time zones and business cultures.
+              From the luxury markets of
+              <span className="text-zinc-100 font-medium text-white">
+                {" "}
+                Dubai{" "}
+              </span>{" "}
+              and
+              <span className="text-zinc-100 font-medium text-white">
+                {" "}
+                Riyadh{" "}
+              </span>{" "}
+              to the corporate landscape of
+              <span className="text-zinc-100 font-medium text-white">
+                {" "}
+                Muscat
+              </span>
+              , I deliver digital solutions that resonate with global audiences.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { location: "Dubai", market: "United Arab Emirates" },
+              { location: "Muscat", market: "Oman - Corporate" },
+              { location: "Riyadh", market: "Saudi Arabia - Tech" },
+              { location: "Jeddah", market: "Saudi Arabia - Retail" },
+              { location: "Kochi", market: "Infopark Tech Hub" },
+              { location: "Calicut", market: "Kerala Business" },
+            ].map((item, i) => (
+              <div
+                key={i}
+                className="p-6 border border-zinc-900 bg-zinc-900/10 rounded-sm"
+              >
+                <h4 className="text-white text-xs font-bold uppercase tracking-widest mb-1">
+                  {item.location}
+                </h4>
+                <p className="text-[9px] text-zinc-600 uppercase tracking-widest">
+                  {item.market}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

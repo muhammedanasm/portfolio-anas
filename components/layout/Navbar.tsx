@@ -30,8 +30,8 @@ const Navbar = () => {
       href: "#",
       submenu: [
         { name: "Premium Web Design", href: "/services/premium-web-design" },
-        // { name: "E-commerce Solutions", href: "/services/ecommerce-solutions" },
-        // { name: "SEO Optimization", href: "/services/seo-optimization" },
+        { name: "E-commerce Solutions", href: "/services/ecommerce-solutions" },
+        { name: "SEO Optimization", href: "/services/seo-optimization" },
       ],
     },
     { name: "Process", href: "/#process" },
