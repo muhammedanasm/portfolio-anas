@@ -28,9 +28,8 @@ const SkeletonImage = ({ src, alt }: { src: string; alt: string }) => {
         src={src}
         alt={alt}
         fill
-        className={`object-cover transition-all duration-1000 group-hover:scale-[1.03] ${
-          isLoading ? "opacity-0" : "opacity-100"
-        }`}
+        className={`object-cover transition-all duration-1000 group-hover:scale-[1.03] ${isLoading ? "opacity-0" : "opacity-100"
+          }`}
         onLoad={() => setIsLoading(false)}
       />
     </div>
@@ -40,22 +39,44 @@ const SkeletonImage = ({ src, alt }: { src: string; alt: string }) => {
 const projects = [
   {
     id: "01",
+    slug: "qint-group",
+    title: "QINT",
+    category: "Next.js • GSAP • Tailwind",
+    url: "https://qintgroup.com/",
+    image: "/images/qint.jpg",
+    layoutClass: "md:w-9/12 self-start",
+  },
+
+  {
+    id: "02",
+    slug: "calinova-innovation",
+    title: "Calinova | Innovation's Next Chapter",
+    category: "Next.js • GSAP • Tailwind",
+    url: "https://calinova.vercel.app",
+    image: "/images/calinova.png",
+    layoutClass: "md:w-9/12 self-start",
+  },
+  {
+    id: "03",
+    slug: "swa-diamonds",
     title: "Swa Diamonds",
     category: "React • Tailwind • Ecommerce • Firebase",
     image: "/images/swa.jpg",
     url: "https://b2b.swadiamonds.com/",
-    layoutClass: "md:w-9/12 self-start", // ഇടത് വശത്ത് വലിയ വലിപ്പത്തിൽ
+    layoutClass: "md:w-7/12 self-end md:-mt-32", // ഇടത് വശത്ത് വലിയ വലിപ്പത്തിൽ
   },
   {
-    id: "02",
+    id: "04",
+    slug: "iesi-industrial-solutions-kerala",
     title: "IESI Project",
     category: "NEXT.JS • GSAP • SEO",
     url: "https://iesi.vercel.app/",
-    image: "/images/ies.jpg",
-    layoutClass: "md:w-7/12 self-end md:-mt-32", // വലത് വശത്ത് അല്പം മുകളിലേക്ക് കയറി
+    image: "/images/ies.avif",
+    layoutClass: "md:w-10/12 self-start md:-mt-20", // വലത് വശത്ത് അല്പം മുകളിലേക്ക് കയറി
   },
   {
-    id: "03",
+    id: "05",
+    slug: "abate-project",
     title: "Abate Project",
     category: "React • tailwind • SEO",
     url: "https://abatemr.com/",
@@ -64,7 +85,8 @@ const projects = [
   },
 
   {
-    id: "04",
+    id: "06",
+    slug: "welota",
     title: "Welota",
     category: "React • UI/UX • Branding",
     url: "https://www.welota.com/",
@@ -72,7 +94,8 @@ const projects = [
     layoutClass: "md:w-10/12 self-start md:-mt-20", // വലിയ വലിപ്പത്തിൽ
   },
   {
-    id: "05",
+    id: "07",
+    slug: "trucks-data",
     title: "Trucks Data",
     category: "React • Data Visualization • Performance",
     image: "/images/trucks.webp",
@@ -80,7 +103,8 @@ const projects = [
     layoutClass: "md:w-8/12 self-end md:mr-10",
   },
   {
-    id: "06",
+    id: "08",
+    slug: "techbank",
     title: "TechBank",
     category: "Vue.js • Tailwind • Performance",
     image: "/images/tech.jpg",
@@ -88,7 +112,8 @@ const projects = [
     layoutClass: "md:w-7/12 self-start md:ml-20 md:-mt-32",
   },
   {
-    id: "07",
+    id: "09",
+    slug: "swa-diamonds",
     title: "Swa Diamonds",
     category: "Next.js • Tailwind • Ecommerce • Firebase",
     image: "/images/01.png",
@@ -97,7 +122,8 @@ const projects = [
     layoutClass: "md:w-7/12 self-end md:-mt-32",
   },
   {
-    id: "08",
+    id: "10",
+    slug: "core-vista",
     title: "Core Vista ",
     category: "Html • CSS • Performance",
     url: "https://www.core-vista.com/",
@@ -105,7 +131,8 @@ const projects = [
     layoutClass: "md:w-8/12 self-center", // നടുവിൽ
   },
   {
-    id: "09",
+    id: "11",
+    slug: "chocolate-pos",
     title: "Chocolate POS",
     category: "react • django • tailwind",
     url: "https://fifi-pos.zinfog.in/",
@@ -168,10 +195,10 @@ export default function WorkPage() {
               </span>
 
               {/* Image Container (MacBook Mockup Style) */}
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={`/work/${project.slug}`}
+                // target="_blank"
+                // rel="noopener noreferrer"
                 className="relative z-10 overflow-hidden aspect-video bg-zinc-900 rounded-sm shadow-2xl cursor-pointer block"
               >
                 {/* <Image
@@ -186,7 +213,7 @@ export default function WorkPage() {
                     Live Experience
                   </span>
                 </div>
-              </a>
+              </Link>
 
               {/* Project Info - Museum Label Style */}
               <div className="mt-12 flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-l border-zinc-900 pl-8">
@@ -209,10 +236,8 @@ export default function WorkPage() {
                     />
                   </svg>
                 </div> */}
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href={`/work/${project.slug}`}
                   className="w-14 h-14 rounded-full border border-zinc-800 flex items-center justify-center hover:bg-white hover:text-black transition-all duration-500 mb-2"
                 >
                   <svg width="18" height="18" viewBox="0 0 15 15" fill="none">
@@ -222,7 +247,7 @@ export default function WorkPage() {
                       strokeWidth="1.2"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           ))}

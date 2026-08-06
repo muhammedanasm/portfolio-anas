@@ -19,10 +19,10 @@ const projects = [
     gridClass: "md:col-span-6",
   },
   {
-    title: "welota ",
-    category: "react.js • GSAP • SEO",
-    url: "https://welota.com/",
-    image: "/images/welota.JPG",
+    title: "QINT",
+    category: "Next.js • GSAP • SEO",
+    url: "https://qintgroup.com/",
+    image: "/images/qint.jpg",
     gridClass: "md:col-span-4 md:mt-32 md:ml-auto",
   },
   {
